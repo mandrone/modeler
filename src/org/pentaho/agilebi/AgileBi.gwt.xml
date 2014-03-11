@@ -1,17 +1,20 @@
 <module rename-to="agilebi">
 
 	<!-- Inherit the core Web Toolkit stuff. -->
-	<inherits name='com.google.gwt.user.User'/>
-	<inherits name='com.google.gwt.xml.XML'/>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.xml.XML'/>
+  <inherits name="com.google.gwt.i18n.I18N"/>
 
-	<inherits name='org.pentaho.ui.Xul'/>
+  <inherits name='org.pentaho.ui.Xul'/>
   <inherits name='org.pentaho.ui.xul.Gwt'/>
   <inherits name='com.googlecode.gwtx.Java'/>
 
-	<inherits name='org.pentaho.gwt.widgets.Widgets'/>
+  <inherits name='org.pentaho.gwt.widgets.Widgets'/>
 
   <inherits name="org.pentaho.metadata.Model"/>
 
+  <!-- RTL support for Arabic locale -->
+  <extend-property name="locale" values="ar" />
 
   <source path="modeler">
     <exclude name="**/*Servlet*"/>
